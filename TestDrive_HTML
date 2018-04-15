@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>TestDrive Prediction Server</title>
+      <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
+  <body>
+
+
+  <div class="navigation">
+    <div id="logo1" >
+    <img src="/Users/angelinathomas/Documents/UU Life/Academics/TESTING/TestDrive_Prediction_Server/Ulster_University_Logo.png">
+      <div id="logo2" >
+      <img src="/Users/angelinathomas/Documents/UU Life/Academics/TESTING/TestDrive_Prediction_Server/Faculty_of_life_health_sciences_logo.png">
+        <ul>
+          <li><a href="#Home"> Home</a></li>
+          <li><a href="#Pred"> Predictions</a></li>
+          <li><a href="#Datasets">Datasets</a></li>
+          <li><a href="#Prot"> Proteomes</a></li>
+          <li><a href="#Info">Info</a></li> 
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div id=Home>
+  <div id="cover-pic">
+    <div class="cover-content">
+      <h1>Welcome to the TestDrive Prediction Server</h1>
+        <p> Within primary care populations, it has been observed that over 45% of patients have multi-morbidity and this steadily increases to 50% in older adults, whereas those older than 65 years are more likely to have three or more co-morbid conditions and 20% have five or more conditions. Thus, there is an urgent need to develop and apply better guidelines such as the GRADE system (Grading of Recommendations Assessment, Development, and Evaluation) and decide on implementing a quality task-based metric system for multimorbidity.</p>
+      <h2>Predictive Accuracy and Safety for you </h2>
+      
+    </div>
+  </div>
+</div>
+
+<div id=Pred >
+  <div class="products">
+    <h2 >TestDrive Predictor</h2>
+
+      
+      <form id="myForm" action="welcome_get.php" method="get">
+       
+       <h4>Choose your age:</h4>  
+        <li><input type="radio" name="age" value="Below 18" checked>Below 18</li>
+        <li><input type="radio" name="age" value="18 to 30"> 18 to 30</li>
+         <li><input type="radio" name="age" value="30 to 55"> 30 to 55</li>
+          <li><input type="radio" name="age" value="55 to 80"> 55 to 80</li>
+
+          <h4>Choose your gender:</h4>  
+        <li><input type="radio" name="gender" value="Male" checked>Male</li>
+        <li><input type="radio" name="gender" value="Female"> Female</li>
+
+          <h4>Please enter your country of origin:</h4>
+            <p><i><sub>(Please enter accurate inputs for further assessments after submit)</sub></i></p>
+            <textarea rows="4" cols="50" name="sequence" required></textarea><br>
+            <input type="submit" class="btn" value="Submit">
+            <input type="button" class="btn" onclick="myFunction()" value="Reset">
+ 
+        </form> 
+      
+
+      <script>
+        function myFunction() 
+        {
+        document.getElementById("myForm").reset(); 
+        }
+      </script>
+
+      
+
+  </div>
+</div>
+
+<div id=Datasets>
+    <div class="products">
+      <h2>Datasets used to implement TestDrive</h2>
+        <h4>Datasets derived from European Genome-phenome Archive:</h4>  
+          <table>
+            <thead>
+            <tr>
+              <th>Type-2 Diabetes</th>
+              <th>Cardiovascular</th>
+              <th>Rheumatoid Arthritis</th>
+            </tr>
+            </thead>
+        <tbody>
+          <tr>
+            <td><a href="datasets/Type-2 Diabetes_dataset">Type-2 Diabetes_dataset</a></td>
+            <td><a href="datasets/Cardiovascular_dataset">Cardiovascular_dataset</a></td>
+            <td><a href="datasets/Rheumatoid Arthritis_dataset">Rheumatoid Arthritis_dataset</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+<div id=Prot>
+  <div class="products">
+    <h2>Predictions by TestDrive</h2>
+      <table>
+       <thead>
+      <tr>
+        <th>Organism</th>
+        <th>Release</th>
+        <th>File</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><i>Homo sapiens1</i></th>
+        <td>NCBI</td>
+        <td><a href="datasets/Homo.sapiens1_annotations.zip">Homo.sapiens1_annotations.zip</a></td>
+      </tr>
+      <tr>
+        <th><i>Homo.sapiens2</i></th>
+        <td>EMBL</td>
+        <td><a href="datasets/Homo.sapiens2_annotations.zip">Homo.sapiens2_annotations.zip</a></td>
+      </tr>
+      <tr>
+        <th><i>Homo.sapiens3</i></th>
+        <td>BioProject</td>
+        <td><a href="datasets/Homo.sapiens3_annotations.zip">Homo.sapiens3_annotations.zip</a></td>
+      </tr>
+      <tr>
+        <th><i>Homo.sapiens4</i></th>
+        <td>EMBL</td>
+        <td><a href="datasets/Homo.sapiens4_annotations.zip">Homo.sapiens4_annotations.zip</a></td>
+      </tr>
+      <tr>
+        <th><i>Homo.sapiens5</i></th>
+        <td>BioProject</td>
+        <td><a href="datasets/Homo.sapiens5_annotations.zip">Homo.sapiens5_annotations.zip</a></td>
+      </tr>
+      </tbody>
+     </table>
+    </div>
+</div>
+
+    <div id=Info>
+      <div class="products">
+          <div class="info-content">
+        <h2>Further Notes</h2>
+          
+          <h4>Motivation </h4>With the onset of risk assessment tools and machine learning classification models, prediction accuracy is relatively high and the uncertainty in prediction is significantly lowered. Multi-morbidity, as the name implies refers to the co-occurrence of two or more chronic conditions in one patient. Though it appears as common and costly in treatment regimens, it leads as the next frontier that highlights the evolution of Evidence Based Medicine (EBM) wherein the inclusion of patients with multi-morbid diseased conditions are to be analyzed judiciously to design efficient clinical decision support systems.</p>
+
+          <h4>Predictive Analytics </h4>
+            <p style="text-align:justify">1. Provide accurate prompts to clinicians indicating if a patient is at a high risk of the disease, its sub classification and its predicted optimal treatment regimen.</p>
+<p>2. Provide clinical insights by identifying unexpected connections such as a correlation between the use of a certain drug and its outcome.</p>
+<p> 3. Provide leads in research studies by identifying potential subjects to test a new therapy, identify disease risk factors and novel biomarkers.</p>
+
+      <h4>To know more: </h4>
+      <ol>
+      <li><a href="https://www.blog.google/topics/machine-learning/detecting-diabetic-eye-disease-machine-learning/">Advancements in Healthcare Detection using Machine Learning</a></li>
+      <li><a href="https://research.googleblog.com/2016/11/deep-learning-for-detection-of-diabetic.html">Another Advancement in Healthcare Detection using Machine Learning</a></li>
+      </ol>
+
+<b>NOTE:</b><i> This webserver is under development.</i>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html> 
